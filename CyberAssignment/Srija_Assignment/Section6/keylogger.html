@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keylogger Demo</title>
+</head>
+<body>
+
+<h2>Keylogger Demo</h2>
+<input type="text" onkeypress="logKey(event)" placeholder="Type here">
+
+<p id="output"></p>
+
+<script>
+function logKey(e) {
+    document.getElementById("output").innerHTML += e.key;
+}
+</script>
+
+</body>
+</html>

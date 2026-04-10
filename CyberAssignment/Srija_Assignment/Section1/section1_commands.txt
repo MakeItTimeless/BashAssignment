@@ -1,0 +1,33 @@
+# Section 1.1 - Linux Commands
+
+1) To list all files including hidden with details:
+ls -la -h
+
+2) To find all .txt files in home directory:
+find ~ -name "*.txt"
+
+3) To display last 20 lines of scan_results.txt:
+tail -20 scan_results.txt
+
+4) To count number of lines containing "OPEN":
+grep -c OPEN scan_results.txt
+
+5) To create directory structure:
+mkdir -p security/tools/scanners
+
+6) To make exploit.sh executable:
+chmod +x exploit.sh
+
+7) To display user, hostname and current path:
+whoami
+hostname
+pwd
+
+8) To find files modified in last 7 days:
+find . -mtime -7
+
+9) To search for "password" in current directory:
+grep -r password .
+
+10) To display system information:
+uname -a
